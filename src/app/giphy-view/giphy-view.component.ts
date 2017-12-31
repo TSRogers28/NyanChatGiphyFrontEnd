@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GiphyService} from '../service/giphy-service.service';
 
 @Component({
   selector: 'app-giphy-view',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GiphyViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private giphyService: GiphyService) {}
 
   ngOnInit() {
+    this.giphyService.getImageStills();
   }
 
 }
