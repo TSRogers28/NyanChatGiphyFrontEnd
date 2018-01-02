@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { GiphyViewComponent } from './giphy-view/giphy-view.component';
 import { GiphySearchComponent } from './giphy-search/giphy-search.component';
 import { GiphyService } from './service/giphy-service.service';
+import { GiphyComponent } from './giphy/giphy.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GiphyViewComponent,
-    GiphySearchComponent
+    GiphySearchComponent,
+    GiphyComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [GiphyService],
   bootstrap: [AppComponent]

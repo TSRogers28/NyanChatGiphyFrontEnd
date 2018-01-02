@@ -1,3 +1,2 @@
-<p>
-  giphy-view works!
-</p>
+<div *ngFor="let giphy of giphyArray" id="giphys">
+  <app-giphy [retrievedGiphys]="giphy"></app-giphy>
