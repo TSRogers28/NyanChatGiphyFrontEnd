@@ -1,4 +1,3 @@
-
 export class GiphyModel {
 
   url: String;

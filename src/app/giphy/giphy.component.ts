@@ -1,4 +1,3 @@
-
 import {Component, Input, OnInit} from '@angular/core';
 import { GiphyModel } from '../giphy-model/giphy-model.model';
 

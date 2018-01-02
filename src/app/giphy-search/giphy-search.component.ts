@@ -9,7 +9,7 @@ import {GiphyService} from '../service/giphy-service.service';
 export class GiphySearchComponent implements OnInit {
 
   @Input()
-  giphySelect = 'gif';
+  giphySelect: string = 'gif';
 
   constructor(private giphyService: GiphyService) { }
 
